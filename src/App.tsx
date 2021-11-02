@@ -1,9 +1,11 @@
 import React from "react";
+import { RecommendedSection } from "./components/RecommendedSection";
+import { recommendedCourses } from "./dummyData";
 
 function App() {
   return (
     <div>
-      <p>Hello World</p>
+      <RecommendedSection courses={recommendedCourses} />
     </div>
   );
 }
