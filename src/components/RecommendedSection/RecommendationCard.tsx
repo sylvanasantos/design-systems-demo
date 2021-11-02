@@ -3,8 +3,7 @@ import React from "react";
 import { ContentItem } from "./types";
 
 const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: white;
   color: black;
   font-family: "Courier New", Courier, monospace;

@@ -12,3 +12,16 @@ export const recommendedCourses: ContentItem[] = [
     lessons: 112,
   },
 ];
+
+export const intermediateCourses: ContentItem[] = [
+  {
+    type: "Skill Path",
+    title: "Pass the Technical Interview with Javascript",
+    lessons: 37,
+  },
+  {
+    type: "Career Path",
+    title: "Full-Stack Engineer",
+    lessons: 63,
+  },
+];

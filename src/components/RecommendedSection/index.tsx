@@ -10,24 +10,24 @@ const Background = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
   padding: 1rem;
 `;
 
 interface RecommendedSectionProps {
-  courses: ContentItem[];
+  recommendations: ContentItem[];
 }
 
 export const RecommendedSection: React.FC<RecommendedSectionProps> = ({
-  courses,
+  recommendations,
 }) => {
   return (
     <Background>
       <h1>Recommended For You</h1>
       <Grid>
-        {courses.map((course) => (
-          <RecommendationCard recommendation={course} />
+        {recommendations.map((recommendation) => (
+          <RecommendationCard recommendation={recommendation} />
         ))}
       </Grid>
     </Background>

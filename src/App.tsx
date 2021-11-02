@@ -1,11 +1,13 @@
 import React from "react";
+import { IntermediateCoursesSection } from "./components/IntermediateCoursesSection";
 import { RecommendedSection } from "./components/RecommendedSection";
-import { recommendedCourses } from "./dummyData";
+import { intermediateCourses, recommendedCourses } from "./dummyData";
 
 function App() {
   return (
     <div>
-      <RecommendedSection courses={recommendedCourses} />
+      <RecommendedSection recommendations={recommendedCourses} />
+      <IntermediateCoursesSection courses={intermediateCourses} />
     </div>
   );
 }
