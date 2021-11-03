@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import { ContentItem } from "./types";
 
-const CardContainer = styled.div`
+const CardContainer = styled.button`
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -10,8 +10,9 @@ const CardContainer = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   border: 2px solid black;
   padding: 1rem 2rem;
-  width: 20rem;
+  width: 32rem;
   margin-left: 2rem;
+  text-align: start;
 
   h5 {
     margin-bottom: 0.25rem;
@@ -22,6 +23,11 @@ const CardContainer = styled.div`
   }
   h4 {
     margin-top: 0.5rem;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid blueviolet;
   }
 `;
 
