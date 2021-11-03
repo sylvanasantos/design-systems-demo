@@ -1,9 +1,8 @@
 import "focus-visible";
 import styled from "@emotion/styled";
 import React from "react";
-import { IntermediateCoursesSection } from "./components/IntermediateCoursesSection";
-import { RecommendedSection } from "./components/RecommendedSection";
 import { intermediateCourses, recommendedCourses } from "./dummyData";
+import { CurriculumCardGrid } from "./components/CurriculumCardGrid";
 
 const AppContainer = styled.div`
   background-color: #fff0e5;
@@ -15,8 +14,14 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <RecommendedSection recommendations={recommendedCourses} />
-      <IntermediateCoursesSection courses={intermediateCourses} />
+      <CurriculumCardGrid
+        sectionTitle="Recommended For You"
+        items={recommendedCourses}
+      />
+      <CurriculumCardGrid
+        sectionTitle="Intermediate Courses"
+        items={intermediateCourses}
+      />
     </AppContainer>
   );
 }
